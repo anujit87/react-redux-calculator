@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## This is a simple calculator application built using React Hooks and Redux
 
 
-## Steps t Setup the application
+## Steps to Setup the application
 
 1. Fork the repository.
 2. Run the following command to install all the dependencies.
