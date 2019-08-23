@@ -43,8 +43,7 @@ const calculateReducer = (state=initialState,action) => {
             }
         case 'CLEAR':
             return {
-                ...state,
-                input:''
+                ...initialState
             }
         default:
             return state;

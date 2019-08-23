@@ -30,10 +30,7 @@ function App() {
 
   const clearInput = _ => dispatch(clear());
 
-  const add = val => dispatch(operatorClick(val))
-  const substract = val => dispatch(operatorClick(val))
-  const multiply = val => dispatch(operatorClick(val))
-  const divide = val => dispatch(operatorClick(val))
+  const addToOperator = val => dispatch(operatorClick(val))
 
   const evaluateExp = val => dispatch(evaluate(val));
 
@@ -47,25 +44,25 @@ function App() {
           <Button handleClick={addToInput}>7</Button>
           <Button handleClick={addToInput}>8</Button>
           <Button handleClick={addToInput}>9</Button>
-          <Button handleClick={divide}>/</Button>
+          <Button handleClick={addToOperator}>/</Button>
         </div>
         <div className="row">
           <Button handleClick={addToInput}>4</Button>
           <Button handleClick={addToInput}>5</Button>
           <Button handleClick={addToInput}>6</Button>
-          <Button handleClick={multiply}>*</Button>
+          <Button handleClick={addToOperator}>*</Button>
         </div>
         <div className="row">
           <Button handleClick={addToInput}>1</Button>
           <Button handleClick={addToInput}>2</Button>
           <Button handleClick={addToInput}>3</Button>
-          <Button handleClick={substract}>-</Button>
+          <Button handleClick={addToOperator}>-</Button>
         </div>
         <div className="row">
           <Button handleClick={addDecimal}>.</Button>
           <Button handleClick={addZeroToInput}>0</Button>
           <Button handleClick={evaluateExp}>=</Button>
-          <Button handleClick={add}>+</Button>
+          <Button handleClick={addToOperator}>+</Button>
         </div>
         <div className="row">
           <ClearButton handleClear={clearInput}>Clear</ClearButton>
